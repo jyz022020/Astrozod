@@ -2,4 +2,8 @@ node_modules
 package-lock.json
 .vscode
 .DS_Store
+<<<<<<< HEAD
 .env
+=======
+.env
+>>>>>>> 0639ba6 (add the horoscope.js files, added api and npm)
