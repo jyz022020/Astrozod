@@ -4,25 +4,25 @@ Use Node.js and Express.js to create a RESTful API.
 server.js
 
 Use Handlebars.js as the templating engine.
-views 
+views --- Ryan
 
 Use MySQL and the Sequelize ORM for the database.
-connection and models database
+connection and models database --Tianchou
 
 Have both GET and POST routes for retrieving and adding new data.
-api routes
+api routes  --Kaylee
 
 Be deployed using Heroku (with data).
 
 Use at least one new library, package, or technology that we haven’t discussed.
-use a new api
+use a new api --Travis
 
 Have a polished UI.
 html+handlebar
 
 Be responsive.
 
-Be interactive (i.e., accept and respond to user input). login+add comment
+Be interactive (i.e., accept and respond to user input). login+add comment 
 
 Have a folder structure that meets the MVC paradigm.
 
