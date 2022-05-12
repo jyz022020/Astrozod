@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class chineseZodiac extends Model {}
+class ChineseZodiac extends Model {}
 
-chineseZodiac.init(
+ChineseZodiac.init(
   {
     animalName: {
       type: DataTypes.STRING,
@@ -32,8 +32,8 @@ chineseZodiac.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'chineseZodiac',
+    modelName: 'ChineseZodiac',
   }
 );
 
-module.exports = chineseZodiac;
+module.exports = ChineseZodiac;
