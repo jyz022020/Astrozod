@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS astrozod;
+
+CREATE DATABASE astrozod;
