@@ -35,6 +35,10 @@ Zodiacsign.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    prediction:{
+      type:Datatype.STRING,
+      allowNull:false,
+    }
   },
   {
     sequelize,
