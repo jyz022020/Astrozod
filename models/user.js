@@ -35,11 +35,14 @@ User.init(
         len: [10],
       },
     dateOfBirth:{
-        type:DataTypes.INTEGER,
+        type:DataTypes.Date,
         allowNull:false,
         unique:true,
         validate:{
-            FormData
+          isDate: {
+            msg:'please follow year/month/day fomart'
+          }
+
         }
     }
     },
