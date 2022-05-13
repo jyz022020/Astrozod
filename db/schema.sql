@@ -12,4 +12,3 @@ CREATE TABLE zodiacSign(
   id INTEGER NOT NULL,
   stars_name VARCHAR(30) NOT NULL
 );
-
