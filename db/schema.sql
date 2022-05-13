@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-DROP DATABASE IF EXISTS astrozod;
-
-CREATE DATABASE astrozod;
-=======
 DROP DATABASE IF EXISTS astroZod_db;
 CREATE DATABASE astroZod_db;
 
@@ -17,5 +12,3 @@ CREATE TABLE zodiacSign(
   id INTEGER NOT NULL,
   stars_name VARCHAR(30) NOT NULL
 );
-
->>>>>>> feature/user.js
