@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <h1>Welcome to AstroZod where you can learn more about your Horoscope!</h1>
+    <h1>AstroZod</h1>
   </header>
   <nav>
     <a href="/">Home</a>
@@ -20,20 +20,17 @@
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
     <!-- Otherwise, show a link to login -->
-    <a href="/login">Login</a>
+    <a href="/login">Login/Signup</a>
     {{/if}}
   </nav>
   <main>
-    <aside>
-      <h2>Enjoy the horoscopes!</h2>
-    </aside>
     <div class="horoscope">
       {{{body}}}
     </div>
   </main>
   <!-- If the user is logged in, load the JS script for when they logout -->
   {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
+  <script src="/assets/javascript/logout.js"></script>
   {{/if}}
 </body>
 

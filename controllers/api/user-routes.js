@@ -1,4 +1,5 @@
 const router = require('express').Router();
+
 const { User } = require('../../models');
 
 router.get('/', (req, res) => {
@@ -22,19 +23,30 @@ router.get('/', (req, res) => {
       day: req.body.day,
       year: req.body.year
     })
-      .then(dbUserData => {
-        req.session.save(() => {
-          req.session.user_id = dbUserData.id;
-          req.session.username = dbUserData.username;
-          req.session.loggedIn = true;
-    
-          res.json(dbUserData);
-        });
-      })
-      .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
+    .then(dbUserData => {
+      req.session.save(() => {
+        req.session.user_id = dbUserData.id;
+        req.session.username = dbUserData.username;
+        req.session.email = dbUserData.email;
+        req.session.loggedIn = true;
+        res.json(dbUserData);
       });
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+  });
+
+  router.post('/logout', (req, res) => {
+    if (req.session.loggedIn) {
+      req.session.destroy(() => {
+        res.status(204).end();
+      });
+    }
+    else {
+      res.status(404).end();
+    }
   });
 
   router.post('/login', (req, res) => {

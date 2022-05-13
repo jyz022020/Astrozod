@@ -4,11 +4,15 @@ const { User } = require('../models/User');
 
 router.get('/login', (req, res) => {
     console.log(req);
-    // if (req.session.loggedIn) {
-    //   res.redirect('/dashboard/');
-    //   return;
-    // }
+    if (req.session.loggedIn) {
+      res.redirect('/dashboard/');
+      return;
+    }
     res.render('login');
   });
+
+router.get('/', (req, res) => {
+    res.render('homepage');
+})
   
   module.exports = router;

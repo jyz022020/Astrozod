@@ -5,6 +5,8 @@ const request = require('request');
 
 
 function getUserSign(month,day){
+    console.log(month);
+    console.log(typeof(day));
     return getSign({month: month, day: day });
 }
 
@@ -13,7 +15,7 @@ function getUserAnimal(year){
     return userAnimal;    
 }
 
-function getTodayPrediction(sign){
+function getTodayPrediction(sign, callback){
     var options = {
     url: 'https://aztro.sameerkumar.website/?sign=' + sign + '&day=today',
     method: 'POST'
@@ -21,18 +23,12 @@ function getTodayPrediction(sign){
     request(options, callback);
 }
 
-function getTomorrowPrediction(sign){
+function getTomorrowPrediction(sign, callback){
     var options = {
     url: 'https://aztro.sameerkumar.website/?sign=' + sign + '&day=tomorrow',
     method: 'POST'
     };
     request(options, callback);
-}
-
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        return body;
-    }
 }
 
 exports.getUserSign = getUserSign;

@@ -2,6 +2,7 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { User, Comment} = require('../models');
 const horoscope = require('../utils/horoscope');
+const request = require('request');
 // const withAuth = require('../utils/auth');
 
 router.get('/', (req, res) => {
@@ -16,18 +17,32 @@ router.get('/', (req, res) => {
     const userSign = horoscope.getUserSign(userData.month, userData.day);
     const userAnimalSign =horoscope.getUserAnimal(userData.year); 
     const prediction = {};
-    
     prediction.userSign = userSign;
     prediction.userAnimalSign = userAnimalSign;
+    var optionTomorrow = {
+      url: 'https://aztro.sameerkumar.website/?sign=' + userSign + '&day=tomorrow',
+      method: 'POST'
+      };
+    var optionToday = {
+      url: 'https://aztro.sameerkumar.website/?sign=' + userSign + '&day=today',
+      method: 'POST'
+    };
+    request(optionToday, function (error, response) {
+      prediction.today = JSON.parse(response.body).description;
+      request(optionTomorrow, function (error, response) {
+        prediction.tomorrow = JSON.parse(response.body).description;
+        res.render('dashboard', { prediction: prediction, loggedIn: true });
+      })
+    })
+    
     // console.log(prediction.tomorrow.description);
-    res.render('dashboard', { prediction: prediction, loggedIn: true });
+    
   })
   .catch(err => {
     console.log(err);
     res.status(500).json(err);
   });
 })
-
 // get all posts for dashboard
 // router.get('/', withAuth, (req, res) => {
 //   console.log(req.session);

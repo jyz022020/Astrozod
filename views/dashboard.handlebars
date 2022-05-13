@@ -1,10 +1,12 @@
+<aside>
+  <h2>Enjoy the horoscopes!</h2>
+</aside>
 <section>
-  
-  <h3 id="user-sign">{{prediction.userSign}}</h3>
-  <h3 id="user-animal-sign">{{prediction.userAnimalSign}}</h3>
+  <h4 id="user-sign">Sign: {{prediction.userSign}}</h4>
+  <h4 id="user-animal-sign">Animal Sign:{{prediction.userAnimalSign}}</h4>
   <h3>Your Prediction:</h3>
-  <h3 id="today-prediction"></h3>
-  <h3 id="tomorrow-prediction"></h3>
+  <h3 id="today-prediction">Today: {{prediction.today}}</h3>
+  <h3 id="tomorrow-prediction">Tomoorw: {{prediction.tomorrow}}</h3>
 
   <form class="new-post-form">
     <div>
@@ -34,4 +36,3 @@
 {{/if}}
 
 <script src="/javascript/add-post.js"></script> --}}
-<script src="/assets/javascript/prediction.js"></script>
