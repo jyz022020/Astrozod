@@ -5,8 +5,15 @@
   <h4 id="user-sign">Sign: {{prediction.userSign}}</h4>
   <h4 id="user-animal-sign">Animal Sign:{{prediction.userAnimalSign}}</h4>
   <h3>Your Prediction:</h3>
-  <h3 id="today-prediction">Today: {{prediction.today}}</h3>
-  <h3 id="tomorrow-prediction">Tomoorw: {{prediction.tomorrow}}</h3>
+  <div id="today">
+    <h3 id="today-prediction">Today: {{prediction.today}}</h3>
+    <button type="submit" id="today-button" class="share-button">Share this Prediction</button>
+  </div>
+
+  <div id="tomorrow">
+    <h3 id="tomorrow-prediction">Tomoorw: {{prediction.tomorrow}}</h3>
+    <button type="submit" id="tomorrow-button" class="share-button">Share this Prediction</button>
+  </div>"
 
   <form class="new-post-form">
     <div>
@@ -20,6 +27,9 @@
     <button type="submit" class="btn">Create</button>
   </form>
 </section>
+
+<script src="/assets/javascript/dashboard.js"></script>
+
 
 {{!-- {{#if posts.length}}
 <section>

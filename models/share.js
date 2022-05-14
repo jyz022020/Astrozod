@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection.js');
 
-class Comment extends Model {}
+class Share extends Model {}
 
-Comment.init(
+Share.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -18,14 +18,6 @@ Comment.init(
         content: {
             type: DataTypes.STRING,
             allowNull:false
-        },
-        shareid: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            references: {
-                model: 'share',
-                key: 'id'
-            }
         }
     },
     {
@@ -33,9 +25,9 @@ Comment.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'comment',
+        modelName: 'share',
     }
 
 );
 
-module.exports = Comment;
+module.exports = Share;

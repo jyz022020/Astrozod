@@ -1,3 +1,21 @@
 <section>
     <h1>Welcome to AstroZod where you can learn more about your Horoscope!</h1>
 </section>
+<section>
+    <h2>Recent Post:</h2>
+    <ol>
+        {{#each shareList as |share|}}
+            <li>
+                {{share.content}}
+                <ol>
+                    {{#each share.comments as |comment|}}
+                        <li>
+                            {{comment.author}}
+                            {{comment.content}}
+                        </li>
+                    {{/each}}
+                </ol>
+            </li>
+        {{/each}}
+    </ol>
+</section>>
