@@ -10,12 +10,15 @@
                 <ol>
                     {{#each share.comments as |comment|}}
                         <li>
-                            {{comment.author}}
-                            {{comment.content}}
+                            author: {{comment.author}}
+                            comment: {{comment.content}}
                         </li>
                     {{/each}}
                 </ol>
+                <input type="text" id = "comment-{{share.id}}">
+                <button class="add-comment" data-id = "{{share.id}}">Add Comment</button>
             </li>
         {{/each}}
     </ol>
 </section>>
+<script src="/assets/javascript/homepage.js"></script>

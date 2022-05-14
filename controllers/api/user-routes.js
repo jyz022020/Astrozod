@@ -71,7 +71,7 @@ router.get('/', (req, res) => {
       req.session.save(() => {
         req.session.user_id = dbUserData.id;
         req.session.username = dbUserData.username;
-        req.session.email = req.body.email;
+        req.session.email = dbUserData.email;
         req.session.loggedIn = true;
     
         res.json({ user: dbUserData, message: 'You are now logged in!' });
