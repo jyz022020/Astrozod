@@ -9,6 +9,7 @@
   "dependencies": {
     "all": "^0.0.0",
     "aztro-js": "^0.1.5",
+    "bcrypt": "^5.0.1",
     "bootstrap": "^5.2.0-beta1",
     "bootstrap-icons": "^1.8.2",
     "chinese-year": "^1.0.9",
@@ -18,6 +19,8 @@
     "express-handlebars": "^6.0.5",
     "express-session": "^1.17.3",
     "form-data": "^4.0.0",
+    "horoscope": "^2.0.1",
+    "mysql2": "^2.3.3",
     "node-fetch": "^3.2.4",
     "path": "^0.12.7",
     "sequelize": "^6.19.0"
