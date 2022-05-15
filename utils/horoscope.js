@@ -12,7 +12,7 @@ function getUserSign(month,day){
 
 function getUserAnimal(year){
     const userAnimal = getZodiacAnimal.getAnimal(year);
-    return userAnimal;    
+    return userAnimal;
 }
 
 function getTodayPrediction(sign, callback){

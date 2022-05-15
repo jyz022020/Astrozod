@@ -1,17 +1,21 @@
-<section>
+<section id="main-title">
     <h1>Welcome to AstroZod where you can learn more about your Horoscope!</h1>
+    <img src="/assets/image/horoscope.png" alt="horoscope" width="500" height="600">
 </section>
-<section>
-    <h2>Recent Post:</h2>
-    <ol>
+<section id="post-section">
+    <h3>Checkout the latest prediction and comments</h3>
+    <ol style="list-style-type:none;">
         {{#each shareList as |share|}}
             <li>
-                {{share.content}}
-                <ol>
+                <div class="share-prediction">{{share.content}}</div>
+                <ol style="list-style-type:none;">
                     {{#each share.comments as |comment|}}
                         <li>
-                            author: {{comment.author}}
-                            comment: {{comment.content}}
+                            <div class="comment-block">
+                                {{comment.author}} said:
+                                <br>
+                                {{comment.content}}
+                            </div>
                         </li>
                     {{/each}}
                 </ol>
@@ -20,5 +24,5 @@
             </li>
         {{/each}}
     </ol>
-</section>>
+</section>
 <script src="/assets/javascript/homepage.js"></script>

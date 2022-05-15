@@ -1,9 +1,7 @@
 async function addComment(event) {
     event.preventDefault();
     const shareId = event.target.getAttribute('data-id');
-    alert(shareId);
     const content = document.getElementById("comment-" + shareId).value;
-    alert(content);
     if(content) {
         const response = await fetch('/api/comment', {
             method: 'post',

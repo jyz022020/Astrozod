@@ -16,7 +16,7 @@ async function sharePrediction(event) {
             headers: { 'Content-Type': 'application/json' }
         });
         if (response.ok) {
-            document.location.replace('/dashboard/');
+            document.location.replace('/');
         } else {
         alert(response.statusText);
         }

@@ -94,7 +94,7 @@
   
   .painting {
     width: 50%;
-    background-color: white;
+    background-color: rgb(238, 147, 151);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
   }
@@ -281,4 +281,68 @@
     justify-content: center;
     padding: 1%;
     font-size: 110%;
+  }
+
+  #main-title {
+    text-align: center;
+    color: rgb(43, 42, 43);
+  }
+
+  #post-section {
+    text-align: center;
+  }
+
+  .share-prediction {
+    border-style: dashed;
+    background-color: rgba(218, 108, 187, 0.459);
+    border-color:peachpuff;
+
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .comment-block {
+    padding: 5px;
+    background-color:rgba(157, 170, 190, 0.608);
+    border-style: solid;
+    border-color:rgb(205, 173, 173);
+    text-align: left;
+    margin: 5px;
+  }
+
+  .horoscope {
+    background-color: rgb(236, 225, 129);
+  }
+
+  main {
+    background-color: rgb(235, 155, 155);
+  }
+
+  .login-form {
+    margin: 10px;
+    margin-right: 80px;
+    border-style: solid;
+    padding: 10px;
+    background-color: rgba(166, 202, 204, 0.654);
+  }
+
+  .signup-form {
+    margin: 10px;
+    border-style: solid;
+    padding: 10px;
+    background-color: rgb(181, 207, 216);
+  }
+
+  .user-info {
+    font: normal;
+    border: rgb(166, 203, 222);
+    background-color: darkseagreen;
+    margin-top: 20px;
+  }
+
+  .user-prediction {
+    font: normal;
+    background-color: rgb(165, 196, 206);
+
   }
