@@ -14,7 +14,7 @@ const chineseZodiacData = [
 
         'In terms of relationships, single Ox people, you are expected to exit from singleness in 2022. As long as you treat that someone sincerely, you will reap a happy harvest of love. For Ox people with a partner, you are expected to enter the realm of marriage this year.'+ '\r\n' +
         
-        'In terms of health, people of the year of the Ox, you will have some minor problems, but they will just be colds and the like. Don't worry too much. You should actively exercise your body in your spare time to improve your resistance to infection.'
+        'In terms of health, people of the year of the Ox, you will have some minor problems, but they will just be colds and the like. Do not worry too much. You should actively exercise your body in your spare time to improve your resistance to infection.'
     
     },
     {
@@ -82,7 +82,7 @@ const chineseZodiacData = [
         name:'Rooster',
         prediction:'Rooster people (those born in the year of the Rooster), according to Chinese astrological predictions, your overall luck will have an upward trend in 2022, and you will have the opportunity to obtain a platform to showcase your talents.' + '\r\n' +
 
-        'Roosters, you should see great improvements in your career, wealth, and interpersonal relationships this year. This year, you will meet wealthy people who will help you. You will have many opportunities for learning and development, and you will go to the next level in your career. You will inevitably encounter setbacks in the process, but as long as you persist and don't give up, you can win success.',
+        'Roosters, you should see great improvements in your career, wealth, and interpersonal relationships this year. This year, you will meet wealthy people who will help you. You will have many opportunities for learning and development, and you will go to the next level in your career. You will inevitably encounter setbacks in the process, but as long as you persist and do not give up, you can win success.',
     
     },
     {
