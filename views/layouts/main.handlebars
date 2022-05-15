@@ -5,22 +5,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AstroZod</title>
-  {{!-- <link rel="stylesheet" href="/css/tw.css">
-  <link rel="stylesheet" href="/css/style.css"> --}}
+  <!--<link rel="stylesheet" href="/css/style.css">-->
 </head>
 
 <body>
   <header>
-    <h1>AstroZod</h1>
+    <h1 class="text-midnight-700 hover:text-midnight-600">AstroZod</h1>
   </header>
   <nav>
-    <a href="/">Home</a>
+    <a href="/"> 
+      <a href="/login">
+        <button class="bg-purple-500 hover:bg-purple-600 active:bg-purple-700 focus:outline-none focus:ring focus:ring-purple-300">
+  Home
+        </button>
+      </a>
+  </a>
     <!-- If the user is logged in, show a logout button -->
     {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
+    <button id="logout">Logout</button>
     {{else}}
     <!-- Otherwise, show a link to login -->
-    <a href="/login">Login/Signup</a>
+    <a href="/login">
+      <button class="bg-purple-500 hover:bg-purple-600 active:bg-purple-700 focus:outline-none focus:ring focus:ring-purple-300">
+  Login/SignUp
+      </button>
+    </a>
     {{/if}}
   </nav>
   <main>

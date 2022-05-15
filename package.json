@@ -1,10 +1,9 @@
 {
   "name": "project2",
   "scripts": {
-    "build-css": "tailwind build -i src/style.css -o public/assets/css/style.css"
   },
   "devDependencies": {
-    "tailwindcss": "^3.0.24"
+    
   },
   "dependencies": {
     "all": "^0.0.0",
