@@ -1,5 +1,10 @@
 # AstroZod
 
+
+### Deployed Page
+* [Heroku](https://astrozod.herokuapp.com/) 
+
+
 ### Webpage:
 *
     ![Webpage](./public/assets/image/ScreenshotP.png)
