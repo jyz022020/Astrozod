@@ -8,9 +8,7 @@ router.post('/', async (req, res) => {
         author: req.body.author,
         content: req.body.content
       });
-  
       res.status(200).json(dbCommentData);
-  
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
